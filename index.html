@@ -11,22 +11,22 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #0f1019;
-  --bg-card: #12131e;
-  --bg-card-hover: #181a28;
-  --surface: #1a1c2e;
-  --border: rgba(255,255,255,0.06);
-  --border-hover: rgba(255,255,255,0.12);
-  --text-primary: #e8e9f0;
-  --text-secondary: #8b8da3;
-  --text-muted: #555770;
-  --accent: #00d4aa;
-  --accent-dim: rgba(0,212,170,0.12);
-  --accent-glow: rgba(0,212,170,0.25);
-  --accent-secondary: #4d7cfe;
-  --accent-secondary-dim: rgba(77,124,254,0.12);
-  --gradient-accent: linear-gradient(135deg, #00d4aa 0%, #4d7cfe 100%);
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #0f0f0e;
+  --bg-card: #141412;
+  --bg-card-hover: #1c1c18;
+  --surface: #1e1e1a;
+  --border: rgba(255,215,0,0.08);
+  --border-hover: rgba(255,215,0,0.18);
+  --text-primary: #f0ece0;
+  --text-secondary: #9a9480;
+  --text-muted: #5e5a4c;
+  --accent: #ffd700;
+  --accent-dim: rgba(255,215,0,0.10);
+  --accent-glow: rgba(255,215,0,0.30);
+  --accent-secondary: #ffb300;
+  --accent-secondary-dim: rgba(255,179,0,0.12);
+  --gradient-accent: linear-gradient(135deg, #ffd700 0%, #ffb300 100%);
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body: 'Outfit', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -90,13 +90,13 @@ body::before {
 }
 .orb-1 {
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(0,212,170,0.08), transparent 70%);
+  background: radial-gradient(circle, rgba(255,215,0,0.08), transparent 70%);
   top: -200px; right: -200px;
   animation: orbFloat 20s ease-in-out infinite;
 }
 .orb-2 {
   width: 500px; height: 500px;
-  background: radial-gradient(circle, rgba(77,124,254,0.06), transparent 70%);
+  background: radial-gradient(circle, rgba(255,179,0,0.06), transparent 70%);
   bottom: -150px; left: -150px;
   animation: orbFloat 25s ease-in-out infinite reverse;
 }
@@ -415,7 +415,7 @@ section {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, transparent 60%, rgba(0,212,170,0.15));
+  background: linear-gradient(135deg, transparent 60%, rgba(255,215,0,0.15));
   pointer-events: none;
 }
 
@@ -1180,7 +1180,7 @@ section {
           I'm <strong>Elton Matanda</strong>, a software developer with a strong focus on
           full-stack web development and a growing interest in AI and automation.
           I work primarily with <strong>TypeScript</strong>, <strong>React</strong>, <strong>Next.js</strong>,
-          and <strong>Python</strong> to build applications that are both functional and elegant.
+          <strong>Flutter</strong>, and <strong>Python</strong> to build applications that are both functional and elegant.
         </p>
         <p>
           From crafting responsive e-commerce platforms to developing automated trading bots
@@ -1194,7 +1194,7 @@ section {
           <div class="stat-label">Projects</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number">6+</div>
+          <div class="stat-number">7+</div>
           <div class="stat-label">Technologies</div>
         </div>
         <div class="stat-card">
@@ -1274,6 +1274,13 @@ section {
         <span class="skill-name">Node.js</span>
         <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
       </div>
+      <div class="skill-item reveal" style="--level:78%">
+        <span class="skill-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" fill="#027DFD" opacity="0.15"/><path d="M16.3 6L22 11.7l-5.7 5.6H22l-5.7 5.7-5.6-5.7h5.6L10.6 11.7 16.3 6z" fill="#027DFD"/><path d="M16.3 17.3L22 23H16.3l-2.8-2.85 2.8-2.85z" fill="#027DFD" opacity="0.7"/></svg>
+        </span>
+        <span class="skill-name">Flutter</span>
+        <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -1290,7 +1297,7 @@ section {
       <!-- Gear Zenith Flow -->
       <div class="project-card reveal">
         <div class="project-header">
-          <div class="project-icon" style="background:rgba(0,212,170,0.1);color:#00d4aa">
+          <div class="project-icon" style="background:rgba(255,215,0,0.1);color:#ffd700">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
           </div>
           <div class="project-links">
@@ -1314,7 +1321,7 @@ section {
       <!-- Footprint AI -->
       <div class="project-card reveal">
         <div class="project-header">
-          <div class="project-icon" style="background:rgba(77,124,254,0.1);color:#4d7cfe">
+          <div class="project-icon" style="background:rgba(255,179,0,0.1);color:#ffb300">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.5 2-1 2.8L12 13l-3-4.2C8.5 8 8 7.1 8 6a4 4 0 014-4z"/><path d="M9 18l-4 4"/><path d="M15 18l4 4"/><path d="M12 13v5"/></svg>
           </div>
           <div class="project-links">
@@ -1358,7 +1365,7 @@ section {
       <!-- Link Universe -->
       <div class="project-card reveal">
         <div class="project-header">
-          <div class="project-icon" style="background:rgba(0,212,170,0.1);color:#00d4aa">
+          <div class="project-icon" style="background:rgba(255,215,0,0.1);color:#ffd700">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
           </div>
           <div class="project-links">
@@ -1379,7 +1386,7 @@ section {
       <!-- Dalton GBP/USD Bot -->
       <div class="project-card reveal">
         <div class="project-header">
-          <div class="project-icon" style="background:rgba(77,124,254,0.1);color:#4d7cfe">
+          <div class="project-icon" style="background:rgba(255,179,0,0.1);color:#ffb300">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </div>
           <div class="project-links">
@@ -1400,7 +1407,7 @@ section {
       <!-- Sibon -->
       <div class="project-card reveal">
         <div class="project-header">
-          <div class="project-icon" style="background:rgba(0,212,170,0.1);color:#00d4aa">
+          <div class="project-icon" style="background:rgba(255,215,0,0.1);color:#ffd700">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
           <div class="project-links">
@@ -1450,7 +1457,7 @@ section {
           </div>
           <div class="gh-stat">
             <div class="gh-stat-icon">&#128187;</div>
-            <div class="gh-stat-value" data-count="6">0</div>
+            <div class="gh-stat-value" data-count="7">0</div>
             <div class="gh-stat-label">Languages</div>
           </div>
           <div class="gh-stat">
@@ -1466,6 +1473,7 @@ section {
         <div class="lang-item"><span class="lang-dot" style="background:#F7DF1E"></span> JavaScript</div>
         <div class="lang-item"><span class="lang-dot" style="background:#E34F26"></span> HTML</div>
         <div class="lang-item"><span class="lang-dot" style="background:#563D7C"></span> CSS</div>
+        <div class="lang-item"><span class="lang-dot" style="background:#027DFD"></span> Dart / Flutter</div>
       </div>
     </div>
   </div>
@@ -1501,7 +1509,7 @@ section {
           </a>
         </div>
       </div>
-      <form class="contact-form reveal" onsubmit="event.preventDefault(); this.querySelector('.btn-submit').textContent='Message Sent!'; this.querySelector('.btn-submit').style.background='#00d4aa';">
+      <form class="contact-form reveal" onsubmit="event.preventDefault(); this.querySelector('.btn-submit').textContent='Message Sent!'; this.querySelector('.btn-submit').style.background='#ffd700';">
         <div class="form-row">
           <div class="form-group">
             <input type="text" placeholder="Your Name" required>
@@ -1549,7 +1557,7 @@ window.addEventListener('load', () => {
 });
 
 // ─── Typing Effect ───
-const roles = ['Full-Stack Developer', 'Python Engineer', 'AI Enthusiast', 'React Developer', 'TypeScript Specialist'];
+const roles = ['Full-Stack Developer', 'Python Engineer', 'Flutter Developer', 'AI Enthusiast', 'React Developer', 'TypeScript Specialist'];
 const typedEl = document.getElementById('typedText');
 let roleIndex = 0, charIndex = 0, isDeleting = false;
 
